@@ -17,6 +17,12 @@ class CategoryRepository {
     return row;
   }
 
+  async findByName(name) {
+    const [row] = await db.query('SELECT * FROM categories WHERE name = $1', [name]);
+
+    return row;
+  }
+
   async store({ name }) {
     const [row] = await db.query(`
       INSERT INTO categories(name)

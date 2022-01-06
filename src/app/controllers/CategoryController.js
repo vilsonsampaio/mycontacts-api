@@ -28,6 +28,11 @@ class CategoryController {
       return response.status(400).json({ error: 'Name is required' });
     }
 
+    const categoryExists = await CategoryRepository.findByName(name);
+    if (categoryExists) {
+      return response.status(400).json({ error: 'This category already exists' });
+    }
+
     const category = await CategoryRepository.store({ name });
 
     response.json(category);
