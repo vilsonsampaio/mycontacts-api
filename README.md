@@ -2,6 +2,7 @@
 - [x] Criar rota de criação de categoria
 - [x] Criar rota de listagem de todas categorias
 - [x] Implementar ordenação por parte do client na rota de index()
-- [ ] Criar rota de listagem de uma única categoria
+- [x] Criar rota de listagem de uma única categoria
 - [ ] Criar rota de atualização de categoria
 - [ ] Criar rota de remoção de categoria
+- [ ] Transformar o campo do nome da categoria como UNIQUE, e implementar regra de negócio no código.
