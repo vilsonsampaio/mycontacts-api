@@ -37,6 +37,29 @@ class CategoryController {
 
     response.json(category);
   }
+
+  async update(request, response) {
+    const { id } = request.params;
+    const { name } = request.body;
+
+    const categoryExists = await CategoryRepository.findById(id);
+    if (!categoryExists) {
+      return response.status(404).json({ error: 'Category not found' });
+    }
+
+    if (!name) {
+      return response.status(400).json({ error: 'Name is required' });
+    }
+
+    const categoryByName = await CategoryRepository.findByName(name);
+    if (categoryByName && categoryByName.id !== id) {
+      return response.status(400).json({ error: 'This category already exists' });
+    }
+
+    const category = await CategoryRepository.update(id, { name });
+
+    response.json(category);
+  }
 }
 
 module.exports = new CategoryController();
