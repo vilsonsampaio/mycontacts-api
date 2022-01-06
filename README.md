@@ -18,12 +18,14 @@
 
 ## 📌 Tabela de conteúdos
 
-* [Sobre o projeto](#)
-  * [Requisições](#)
-    * [Listagem]()
-  * [Respostas](#)
-* [Features](#)
-* [Instalação](#)
+* [Sobre o projeto](#-sobre-o-projeto)
+  * [Requisições](#-requisições)
+    * [Listagem](#-listagem)
+  * [Respostas](#-respostas)
+* [Features](#-features)
+* [Instalação](#-instalação)
+* [FAQ](#-faq)
+* [Licença](#-licença)
 
 
 ## 📝 Sobre o projeto
@@ -64,12 +66,12 @@ Os *status codes* retornados possuem os seguintes significados:
 | `500` | Erro interno no servidor. |
 
 
-## :rocket: Features
+## 🚀 Features
 - [x] 📲 Criação, listagem, atualização e remoção de contatos
 - [x] 🏷 Criação, listagem, atualização e remoção de categorias
 
 
-## :construction_worker: Instalação
+## 👷 Instalação
 1. Primeiro, é necessário que você tenha instalado em seu computador o [NodeJS](https://nodejs.org/en/docs/), o [Yarn](https://yarnpkg.com/getting-started) e o [Docker Desktop](https://www.docker.com/get-started).
 
 2. Após a instalação dos programas, clone esse repositório: `git clone https://github.com/vilsonsampaio/mycontacts-api.git`.
@@ -97,9 +99,8 @@ Os *status codes* retornados possuem os seguintes significados:
 **Resposta:** Esse projeto utilizou [NodeJS](https://nodejs.org/) junto ao framework [Express](https://expressjs.com/) para construção do servidor HTTP, além do [Postgres](https://www.postgresql.org/), rodando em um container [Docker](https://www.docker.com/), para o banco de dados. Para a IDE, utilizei o [Visual Studio Code](https://code.visualstudio.com/#alt-downloads) com o [Editor Config](https://editorconfig.org/) e [ESLint](https://eslint.org/).
 
 
-# :closed_book: License
+# 📕 Licença
 
-Lançado em jan/2022.
 Este projeto está licenciado sob a [MIT License](https://github.com/vilsonsampaio/mycontacts-api/blob/main/LICENSE).
 
 ---
