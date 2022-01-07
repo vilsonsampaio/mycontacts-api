@@ -99,7 +99,7 @@ Os *status codes* retornados possuem os seguintes significados:
 **Resposta:** Esse projeto utilizou [NodeJS](https://nodejs.org/) junto ao framework [Express](https://expressjs.com/) para construção do servidor HTTP, além do [Postgres](https://www.postgresql.org/), rodando em um container [Docker](https://www.docker.com/), para o banco de dados. Para a IDE, utilizei o [Visual Studio Code](https://code.visualstudio.com/#alt-downloads) com o [Editor Config](https://editorconfig.org/) e [ESLint](https://eslint.org/).
 
 
-# 📕 Licença
+## 📕 Licença
 
 Este projeto está licenciado sob a [MIT License](https://github.com/vilsonsampaio/mycontacts-api/blob/main/LICENSE).
 
