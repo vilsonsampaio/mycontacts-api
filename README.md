@@ -16,23 +16,30 @@
 </p>
 
 
-## 📌 Tabela de conteúdos
+## 📌 Índice
 
-* [Sobre o projeto](#-sobre-o-projeto)
-  * [Requisições](#-requisições)
-    * [Listagem](#-listagem)
-  * [Respostas](#-respostas)
-* [Features](#-features)
-* [Instalação](#-instalação)
-* [FAQ](#-faq)
-* [Licença](#-licença)
+- [📌 Índice](#-índice)
+- [📝 Sobre o projeto](#-sobre-o-projeto)
+  - [⬆ Requisições](#-requisições)
+    - [🏅 Listagem](#-listagem)
+  - [⬇ Respostas](#-respostas)
+- [✨ Features](#-features)
+- [👷 Instalação](#-instalação)
+- [📮 FAQ](#-faq)
+- [📕 Licença](#-licença)
 
 
 ## 📝 Sobre o projeto
 
-O MyContacts API é um projeto de estudo destinado a colocar em prática o conteúdo que foi aprendido durante o curso [**JStack**](https://jstack.com.br/), mais especificamente, no módulo **NodeJS e Express**.
+O MyContacts API é um projeto de estudo destinado a colocar em prática o conteúdo aprendido nos módulos de Back-end do Stage One do curso [**JStack**](https://jstack.com.br/), no qual foi abordado diversos assuntos, como:
+  * Servidores HTTP e APIs REST;
+  * Módulos e pacotes npm;
+  * Controllers, Middlewares e Repository Pattern;
+  * Manipulação de containers com Docker;
+  * Banco de dados SQL e JOINs;
+  * Captura e tratativa de erros, e mais.
 
-Trata-se de uma API que segue os padrões REST, e permite o acesso aos recursos **Contatos** e **Categorias**.
+Trata-se de uma API simples que segue os padrões REST, e permite ao usuário organizar seus **Contatos**, classificando-os por **Categorias**.
   * **Status do projeto**: Concluído ✅
   * **Modelo do Banco de Dados**: [Clique aqui](https://dbdiagram.io/d/61d764a6f8370f0a2edff401)
   * **Ver no Insomnia**: [Clique aqui](https://insomnia.rest/run/?label=MyContacts%20API&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fvilsonsampaio%2Fmycontacts-api%2Fmain%2Finsomnia-schema.json)
@@ -66,41 +73,34 @@ Os *status codes* retornados possuem os seguintes significados:
 | `500` | Erro interno no servidor. |
 
 
-## 🚀 Features
+## ✨ Features
 - [x] 📲 Criação, listagem, atualização e remoção de contatos
 - [x] 🏷 Criação, listagem, atualização e remoção de categorias
 
 
 ## 👷 Instalação
-1. Primeiro, é necessário que você tenha instalado em seu computador o [NodeJS](https://nodejs.org/en/docs/), o [Yarn](https://yarnpkg.com/getting-started) e o [Docker Desktop](https://www.docker.com/get-started).
+1. Primeiro, é necessário que você tenha instalado em seu computador o [NodeJS](https://nodejs.org/en/docs/), o [Yarn](https://yarnpkg.com/getting-started) e o [Docker Desktop](https://www.docker.com/get-started). Caso seu Sistema Operacional seja alguma distribuição Linux, será necessário instalar o [Docker Compose](https://docs.docker.com/compose/) para rodar os containers através de um único comando.
 
-2. Após a instalação dos programas, clone esse repositório: `git clone https://github.com/vilsonsampaio/mycontacts-api.git`.
+2. Tendo os programas listados acima instalados, clone esse repositório: `git clone https://github.com/vilsonsampaio/mycontacts-api.git`.
 
 3. Dentro do diretório do projeto, instale todas as dependências da aplicação: `yarn add`.
 
-4. Para subir o banco de dados da aplicação, em outro terminal, baixe a imagem do Postgres pelo Docker: `docker pull postgres`.
+4. Clone o arquivo `.env.example` para configurar as variáveis de ambiente: `cp .env.example .env`.
 
-5.  Após baixada a imagem, crie o container que irá rodar o banco de dados: `docker run --name pg -e POSTGRES_USER=root -e POSTGRES_PASSWORD=root -p 5432:5432 -d postgres`.
+5. Crie o container que irá rodar o banco de dados da aplicação, alimentando-o com suas respectivas tabelas: `docker-compose up -d`.
 
-6.  Depois de criado, acesse-o: `docker exec -it pg bash`.
-
-7.  Dentro do container, conecte-se ao Postgres: `psql -U root`.
-
-8.  Logado ao banco, crie a database da aplicação com a primeira query presente no arquivo `src/database/schema.sql`: `CREATE DATABASE mycontacts;`. Depois disso, acesse a database recém criada: `\c mycontacts`.
-
-9.  Por fim, dentro da database da aplicação, copie todos os comandos restantes do arquivo `schema.sql`, para criar as tabelas da aplicação.
-
-10. Tudo pronto? Agora é só rodar a aplicação com o comando `yarn dev` que o servidor já estará funcionado no endereço `http://localhost:300/`.
+6. Por fim, execute a aplicação com o comando `yarn dev`, e o servidor já estará funcionado no endereço `http://localhost:3000/`.
 
 
 ## 📮 FAQ
 **Pergunta:** Quais foram as tecnologias utilizadas nesse projeto?
 
-**Resposta:** Esse projeto utilizou [NodeJS](https://nodejs.org/) junto ao framework [Express](https://expressjs.com/) para construção do servidor HTTP, além do [Postgres](https://www.postgresql.org/), rodando em um container [Docker](https://www.docker.com/), para o banco de dados. Para a IDE, utilizei o [Visual Studio Code](https://code.visualstudio.com/#alt-downloads) com o [Editor Config](https://editorconfig.org/) e [ESLint](https://eslint.org/).
+**Resposta:** Esse projeto utilizou [NodeJS](https://nodejs.org/) junto ao framework [Express](https://expressjs.com/) para construção do servidor HTTP, além do [Postgres](https://www.postgresql.org/) para o banco de dados, com este rodando em um container [Docker](https://www.docker.com/). Para a IDE, utilizei o [Visual Studio Code](https://code.visualstudio.com/#alt-downloads) com o [Editor Config](https://editorconfig.org/) e [ESLint](https://eslint.org/).
 
 
 ## 📕 Licença
 
+Desenvolvido em 2022.<br />
 Este projeto está licenciado sob a [MIT License](https://github.com/vilsonsampaio/mycontacts-api/blob/main/LICENSE).
 
 ---
