@@ -18,7 +18,6 @@
 
 ## 📌 Índice
 
-- [📌 Índice](#-índice)
 - [📝 Sobre o projeto](#-sobre-o-projeto)
   - [⬆ Requisições](#-requisições)
     - [🏅 Listagem](#-listagem)
