@@ -6,6 +6,8 @@
 
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/top/vilsonsampaio/mycontacts-api.svg?color=5061FC">
 
+  <img alt="NodeJS Version" src="https://img.shields.io/static/v1?label=node&message=16.13.1&color=339933&logo=node.js" />
+  
   <a href="https://github.com/vilsonsampaio/mycontacts-api/commits/main">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/vilsonsampaio/mycontacts-api.svg?color=5061FC">
   </a>
