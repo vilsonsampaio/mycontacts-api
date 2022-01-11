@@ -39,7 +39,7 @@ O MyContacts API é um projeto de estudo destinado a colocar em prática o conte
   * Captura e tratativa de erros, e mais.
 
 Trata-se de uma API simples que segue os padrões REST, e permite ao usuário organizar seus **Contatos**, classificando-os por **Categorias**.
-  * **Status do projeto**: Concluído ✅
+  * **Status do projeto**: ✅ Concluído
   * **Modelo do Banco de Dados**: [Clique aqui](https://dbdiagram.io/d/61d764a6f8370f0a2edff401)
   * **Ver no Insomnia**: [Clique aqui](https://insomnia.rest/run/?label=MyContacts%20API&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fvilsonsampaio%2Fmycontacts-api%2Fmain%2Finsomnia-schema.json)
 
