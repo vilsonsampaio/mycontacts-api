@@ -75,6 +75,7 @@ Os *status codes* retornados possuem os seguintes significados:
 ## ✨ Features
 - [x] 📲 Criação, listagem, atualização e remoção de contatos
 - [x] 🏷 Criação, listagem, atualização e remoção de categorias
+- [ ] 📖 Documentação da API pelo Swagger.
 
 
 ## 👷 Instalação
